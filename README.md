@@ -1,7 +1,7 @@
 setup
 =====
 
-Scripts and links to get my preferred development environment setup quickly.
+Scripts and links to get my preferred development environments setup quickly.
 
 mac
 ---
