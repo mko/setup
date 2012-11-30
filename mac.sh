@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/zsh
 
 guard() {
 	$* || (echo failed 1>&2 && exit 1)
