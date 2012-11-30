@@ -21,7 +21,7 @@ echo "Installing Homebrew ..."
 	guard brew doctor
 	guard brew update
 
-echo "Installing tools ..."
+echo "Installing packages ..."
 	guard brew install autoconf
 	guard brew install automake
 	guard brew install ack
@@ -30,12 +30,8 @@ echo "Installing tools ..."
 	guard brew install tmux
 	guard brew install tree
 
-echo "Cloning dotfiles ..."
-	guard git clone git://github.com/shannonmoeller/dotfiles.git dotfiles
-	guard git clone git://github.com/gmarik/vundle.git dotfiles/.vim/bundle/vundle
-	guard git clone git://github.com/zsh-users/zsh-syntax-highlighting.git dotfiles/.zsh/bundle/zsh-syntax-highlighting
-
 echo "Installing dotfiles ..."
+	guard git clone git://github.com/shannonmoeller/dotfiles.git dotfiles
 	guard ln -s dotfiles/.zshrc ~/.zshrc
 	guard source ~/.zshrc
 	guard vim +BundleInstall +qall
