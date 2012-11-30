@@ -6,7 +6,7 @@ Scripts and links to get my preferred development environments setup quickly.
 mac
 ---
 
-1. [Xcode](https://itunes.apple.com/app/id497799835)
+1. Install [Xcode](https://itunes.apple.com/app/id497799835)
 2. `chsh -s /bin/zsh`
 3. `curl -fsSkL raw.github.com/shannonmoeller/setup/master/mac.sh | sh`
 4. Intarwebs
